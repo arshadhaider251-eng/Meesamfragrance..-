@@ -5,23 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meesam Fragrance | M.F</title>
     <style>
-        /* Mobile-First, Premium UI Styles */
         :root { 
             --primary-dark: #121212; 
             --gold-accent: #d4af37; 
             --bg-light: #f9f9f9;
             --text-gray: #555;
         }
-        
         * { box-sizing: border-box; }
-        
         body { 
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             margin: 0; padding: 0; 
             background-color: var(--bg-light); 
             color: #333; 
         }
-        
         header { 
             background: var(--primary-dark); 
             color: white; 
@@ -29,77 +25,40 @@
             text-align: center; 
             border-bottom: 4px solid var(--gold-accent);
         }
-        
         header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 2px; color: var(--gold-accent); }
         header p { margin: 5px 0 0; font-size: 1rem; letter-spacing: 3px; font-weight: 300; text-transform: uppercase;}
-        
         .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
-        
         .hero { 
             text-align: center; padding: 30px 15px; 
             background: white; margin-bottom: 30px; 
             border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.03); 
         }
-        .hero h2 { color: var(--primary-dark); margin-top: 0; }
-        .hero p { color: var(--text-gray); font-size: 1.1rem; }
-        
         .product-grid { 
             display: grid; 
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
             gap: 25px; 
         }
-        
         .product-card { 
             background: white; border-radius: 12px; padding: 20px; 
             text-align: center; box-shadow: 0 5px 20px rgba(0,0,0,0.05); 
-            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+            transition: transform 0.3s ease; 
         }
-        
-        .product-card:hover { 
-            transform: translateY(-5px); 
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-        
         .product-card img { 
             width: 100%; height: 250px; 
             object-fit: contain; 
             border-radius: 8px; margin-bottom: 15px;
-            background-color: #fff;
         }
-        
-        .title { font-size: 1.3rem; font-weight: bold; color: var(--primary-dark); }
-        .desc { color: var(--text-gray); font-size: 0.95rem; margin: 10px 0 20px; min-height: 40px;}
-        
         .order-btn { 
             background: var(--primary-dark); color: var(--gold-accent); 
             text-decoration: none; padding: 12px 20px; 
             border-radius: 8px; display: inline-block; 
             font-weight: bold; width: 100%;
-            transition: background 0.3s ease;
-            border: 1px solid var(--primary-dark);
         }
-        .order-btn:hover { 
-            background: white; 
-            color: var(--primary-dark); 
-        }
-
         .whatsapp-float { 
             position: fixed; bottom: 20px; right: 20px; 
             background-color: #25d366; color: white; 
             border-radius: 50px; padding: 12px 20px; 
-            text-decoration: none; font-weight: bold; font-size: 1.1rem;
-            display: flex; align-items: center; justify-content: center;
-            box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4); z-index: 1000; 
-            transition: transform 0.3s ease;
-        }
-        .whatsapp-float:hover { 
-            transform: scale(1.05); 
-            background-color: #20b858;
-        }
-        
-        @media (max-width: 600px) {
-            header h1 { font-size: 2rem; }
-            .product-card img { height: 220px; }
+            text-decoration: none; font-weight: bold;
         }
     </style>
 </head>
@@ -113,45 +72,37 @@
 <div class="container">
     <section class="hero">
         <h2>Premium Fragrance Collection</h2>
-        <p>Explore our exclusive range of luxury perfumes and attars. Click on any product to order directly via WhatsApp.</p>
+        <p>Exclusive range of luxury perfumes. Click to order via WhatsApp.</p>
     </section>
 
     <section class="product-grid">
-        
         <div class="product-card">
             <img src="Gemini_Generated_Image_nou2jdnou2jdnou2.png" alt="Oud Al Layl">
-            <div class="title">Oud Al Layl</div>
-            <div class="desc">A premium, long-lasting Oud essence enclosed in an elegant clear bottle.</div>
-            <a href="https://wa.me/923472828977?text=Hi, I would like to order 'Oud Al Layl'." class="order-btn" target="_blank">Order via WhatsApp</a>
+            <div style="font-weight:bold;">Oud Al Layl</div>
+            <a href="https://wa.me/923472828977?text=Order: Oud Al Layl" class="order-btn">Order via WhatsApp</a>
         </div>
 
         <div class="product-card">
             <img src="Gemini_Generated_Image_9zgacu9zgacu9zga.png" alt="Denhill Desire Purple">
-            <div class="title">Denhill Desire (Purple Edition)</div>
-            <div class="desc">A bold and captivating scent perfect for making a strong impression.</div>
-            <a href="https://wa.me/923472828977?text=Hi, I would like to order 'Denhill Desire (Purple Edition)'." class="order-btn" target="_blank">Order via WhatsApp</a>
+            <div style="font-weight:bold;">Denhill Desire (Purple)</div>
+            <a href="https://wa.me/923472828977?text=Order: Denhill Desire Purple" class="order-btn">Order via WhatsApp</a>
         </div>
 
         <div class="product-card">
             <img src="Gemini_Generated_Image_wfv5lkwfv5lkwfv5.png" alt="Denhill Desire Classic">
-            <div class="title">Denhill Desire (Classic)</div>
-            <div class="desc">The classic signature fragrance with a refreshing and modern appeal.</div>
-            <a href="https://wa.me/923472828977?text=Hi, I would like to order 'Denhill Desire (Classic)'." class="order-btn" target="_blank">Order via WhatsApp</a>
+            <div style="font-weight:bold;">Denhill Desire (Classic)</div>
+            <a href="https://wa.me/923472828977?text=Order: Denhill Desire Classic" class="order-btn">Order via WhatsApp</a>
         </div>
 
         <div class="product-card">
             <img src="Gemini_Generated_Image_i6edcqi6edcqi6ed.png" alt="Royal Golden Attar">
-            <div class="title">Royal Golden Attar</div>
-            <div class="desc">Traditional, pure, alcohol-free essence presented in a luxurious golden vial.</div>
-            <a href="https://wa.me/923472828977?text=Hi, I would like to order the 'Royal Golden Attar'." class="order-btn" target="_blank">Order via WhatsApp</a>
+            <div style="font-weight:bold;">Royal Golden Attar</div>
+            <a href="https://wa.me/923472828977?text=Order: Royal Golden Attar" class="order-btn">Order via WhatsApp</a>
         </div>
-
     </section>
 </div>
 
-<a href="https://wa.me/923472828977" class="whatsapp-float" target="_blank">
-    💬 Chat / Inquiries
-</a>
+<a href="https://wa.me/923472828977" class="whatsapp-float">💬 Chat / Inquiries</a>
 
 </body>
 </html>
